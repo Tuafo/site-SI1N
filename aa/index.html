@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="principal">
+            <div>
+            <p>Escolha a moeda de entrada</p>
+            <input type="radio" name="in" value="BRL" checked> REAL <br>
+            <input type="radio" name="in" value="USD"> DOLAR <br>
+            <input type="radio" name="in" value="EUR"> EURO <br>
+            <input type="radio" name="in" value="GBP"> LIBRA <br>
+        </div>
+
+        <div>
+            <p>Escolha a moeda de saída</p>
+            <input type="radio" name="out" value="BRL"> REAL <br>
+            <input type="radio" name="out" value="USD" checked> DOLAR <br>
+            <input type="radio" name="out" value="EUR"> EURO <br>
+            <input type="radio" name="out" value="GBP"> LIBRA <br>
+        </div>
+
+        <div>
+            Valor: <input id="quantia" type="number" value="10.00">
+            <button onclick="converter()">CONVERTER</button>
+        </div>
+
+        <p>O valor convertido é <span id="res">???</span> </p>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
